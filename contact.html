@@ -10,7 +10,7 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo">SwiftCart</div>
+      <a href="index.html" class="logo">SwiftCart</a>
 
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
@@ -18,8 +18,13 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-
-      <div class="cart">🛒 <span id="cart-count">0</span></div>
+      
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <div class="cart">🛒 <span id="cart-count">0</span></div>
+      </div>
     </nav>
 
     <!-- CONTACT HERO -->
@@ -220,8 +225,52 @@
 
     <!-- FOOTER -->
     <footer>
-      <h3>SwiftCart</h3>
-      <p>© 2025 SwiftCart. All rights reserved.</p>
+      <div class="footer-container">
+        <div class="footer-section">
+          <a href="index.html" style="text-decoration: none;"><h3>SwiftCart</h3></a>
+          <p class="footer-desc">Your one-stop shop for all your fashion and lifestyle needs. Quality products, delivered with care and excellence.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section newsletter-section">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <p class="newsletter-desc">The latest news, articles, and resources, sent to your inbox weekly.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 SwiftCart. All rights reserved.</p>
+        <div class="social-icons-footer">
+          <a href="#" class="social-icon-footer">📘</a>
+          <a href="#" class="social-icon-footer">🐦</a>
+          <a href="#" class="social-icon-footer">📷</a>
+          <a href="#" class="social-icon-footer">💼</a>
+          <a href="#" class="social-icon-footer">📧</a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
