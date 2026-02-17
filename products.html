@@ -1,0 +1,56 @@
+a<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - SwiftCart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">SwiftCart</div>
+
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>Products</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="cart">🛒 <span id="cart-count">0</span></div>
+    </nav>
+
+    <!-- PRODUCTS TITLE -->
+    <section class="products-section">
+      <h2 class="product-title">Our Products</h2>
+
+      <!-- CATEGORY FILTER -->
+      <div id="category-buttons" class="category-buttons">
+        <!-- dynamic categories will load here -->
+      </div>
+
+      <!-- PRODUCTS GRID -->
+      <div id="products-container" class="products-grid">
+        <!-- products will load here -->
+      </div>
+    </section>
+
+    <!-- PRODUCT MODAL -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+
+        <img id="modal-img" />
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <h4 id="modal-price"></h4>
+
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

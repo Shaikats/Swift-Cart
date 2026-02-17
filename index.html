@@ -6,8 +6,69 @@
     <title>SwiftCart</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>SwiftCart E-Commerce</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">SwiftCart</div>
+
+      <ul class="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="cart">🛒 <span id="cart-count">0</span></div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Best Collection For You</h1>
+        <p>Discover the latest trends in fashion, electronics, and more.</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="features">
+      <h2>Why Choose Us</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Fast Delivery</h3>
+          <p>Get your orders delivered quickly</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>24/7 Support</h3>
+          <p>We are always available</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Secure Payment</h3>
+          <p>Safe & encrypted payment</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Easy Returns</h3>
+          <p>30 days return policy</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDING -->
+    <section class="trending">
+      <h2>Trending Now</h2>
+      <div id="trending-products"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h3>SwiftCart</h3>
+      <p>© 2025 SwiftCart. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
